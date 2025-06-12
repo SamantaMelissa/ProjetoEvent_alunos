@@ -1,0 +1,31 @@
+.main_notfound {
+    height: 100vh;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.esquerda h2{
+    margin-bottom: 20px;
+}
+
+
+.botao_para_login{
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+}
+
+.main_notfound img{
+    height: 500px;
+}

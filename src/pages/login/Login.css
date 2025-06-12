@@ -1,0 +1,75 @@
+.mainLogin{
+    display: flex;
+    height: 100vh;
+}
+
+.banner{
+    background-color: #B51D44;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+}
+
+.formularioLogin{
+    flex: 1;
+
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campos_input{
+    width: 50%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo_img{
+    width: 40%;
+}
+
+.formularioLogin a{
+    color: grey;
+    text-decoration: none;
+
+    font-size: small;
+}
+
+.campo_input{
+    display: flex;
+    flex-direction: column;
+
+  
+}
+
+.campo_input label{
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+
+.campo_input input{
+    border: none;
+    border-bottom: 1px solid grey;
+
+    padding: 10px;
+
+    outline: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .banner{
+        display: none;
+    }
+
+}
