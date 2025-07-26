@@ -6,10 +6,12 @@ const apiPort = "5289";
 
 // Monta a URL base para a API local, usando a porta definida
 const localApi = `http://localhost:${apiPort}/api/`;
+const nuvemApi = `https://webapievent-g7ddgbducyedfqar.canadacentral-01.azurewebsites.net/api/`;
 
 //create => cria uma instancia do axios que está configurada com a porta da minha API
 const api = axios.create({
-    baseURL : localApi
+    // baseURL : localApi
+    baseURL : nuvemApi
 });
 
 // Exporta a instância do axios para ser usada em outros arquivos do projeto

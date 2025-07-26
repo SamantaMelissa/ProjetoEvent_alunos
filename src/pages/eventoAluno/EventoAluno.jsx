@@ -30,6 +30,8 @@ const EventoAluno = () => {
     const [filtroData, setFiltroData] = useState(["todos"]);
 
     const {usuario} = useAuth();
+
+    
     // const [usuarioId, setUsuarioId] = useState("817B69EB-ECFE-4E39-B872-F2871AF79756")
 
     async function listarEventos() {
@@ -131,6 +133,8 @@ const EventoAluno = () => {
                 <div className="titulo">
                     <h1>Eventos</h1>
                     <hr />
+
+                        <p>{usuario.tipoUsuario}</p>
                 </div>
 
                 <select onChange={(e) => setFiltroData([e.target.value])}>

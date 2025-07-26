@@ -21,6 +21,7 @@ const Login = () => {
 
     const {setUsuario} = useAuth();
 
+
     async function realizarAutenticacao(e){
 
         e.preventDefault();
@@ -74,6 +75,7 @@ const Login = () => {
         <main className="mainLogin">
             <div className="banner">
                     <img src={FundoLogin} alt="Imagem de fundo" />
+                
                 </div>
 
                 <form action="" className="formularioLogin" onSubmit={realizarAutenticacao}>

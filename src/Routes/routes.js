@@ -5,11 +5,13 @@ import { useAuth } from "../contexts/AuthContext";
 import CadastroEvento from "../pages/cadastroEvento/CadastroEvento";
 import NotFound from "../pages/notFound/NotFound";
 
-
+import secureLocalStorage from 'react-secure-storage'
 const Privado = (props) => {
     const { usuario } = useAuth();
     //toke, idUsuario, tipoUsuario
-
+    const token =  JSON.parse(secureLocalStorage.getItem("tokenLogin"));
+    console.log(usuario)
+    console.log(token)
     // Se não estiver autenticado, manda para login
     if (!usuario) {
         return <Navigate to="/NotFound" />;
